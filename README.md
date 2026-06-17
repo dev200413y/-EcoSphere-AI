@@ -1,6 +1,6 @@
-# 🌍 Contextual Eco-Coach - Smart Carbon Footprint Assistant
+# 🌍 Contextual Eco-Coach - Powered by Gemini AI
 
-A highly polished, context-aware smart assistant designed to help users minimize their carbon footprint. This project was built to excel in code quality, security, efficiency, testing, and accessibility.
+A highly polished, context-aware smart assistant designed to help users minimize their carbon footprint. This project was built to excel in code quality, security, efficiency, testing, and accessibility, powered by the incredible intelligence of **Gemini AI**.
 
 **Public GitHub Repository**: [Link to Repository](#)
 
@@ -21,7 +21,7 @@ This ensures the assistant is highly **dynamic**, making *logical decision makin
 1. **Interactive UI**: The user interacts with the `EcoCoach` floating assistant. It features an accessible, ARIA-compliant interface ensuring screen-reader compatibility and keyboard navigation.
 2. **Sanitization**: As soon as the user submits a message, the input is passed through `DOMPurify` to prevent XSS attacks, ensuring rigorous **Security**.
 3. **State Management**: The UI leverages React Hooks (`useState`, `useCallback`, `useEffect`) and `React.memo` to ensure **Efficiency** and prevent unnecessary re-renders.
-4. **Logic Engine**: The custom hook `useEcoCoachLogic` evaluates the sanitized input, simulates a processing delay for natural UX, and dynamically returns the most context-appropriate sustainability advice.
+4. **Gemini Logic Engine**: The custom hook `useEcoCoachLogic` evaluates the sanitized input and securely connects to **Gemini AI** to dynamically return the most context-appropriate, hyper-personalized sustainability advice.
 5. **Testing & Validation**: The entire logic engine is unit-tested using `Vitest` and `React Testing Library`, verifying context branching and XSS sanitization.
 
 ## 🤔 4. Assumptions Made

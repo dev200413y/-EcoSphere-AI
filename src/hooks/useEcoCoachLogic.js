@@ -54,7 +54,7 @@ export function useEcoCoachLogic() {
     setIsTyping(true);
 
     try {
-      // Use the Mistral AI API for truly dynamic, smart responses
+      // Use the Gemini AI API for truly dynamic, smart responses
       const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -78,7 +78,7 @@ export function useEcoCoachLogic() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to fetch from Mistral');
+        throw new Error('Failed to fetch from Gemini');
       }
 
       const data = await response.json();

@@ -180,12 +180,12 @@ function Calculator() {
           </div>
 
           <button className="btn-primary full-width" onClick={handleGenerateInsights} disabled={isCalculating} style={{marginTop: '2rem'}}>
-            {isCalculating ? "Analyzing..." : "Get AI Insights ✨"}
+            {isCalculating ? 'Thinking...' : 'Get Gemini AI Insights ✨'}
           </button>
 
           {aiInsight && (
             <div className="ai-insight-box animate-fade-in">
-              <h4><Sparkles size={16}/> AI Coach</h4>
+              <h4><Sparkles size={18}/> Powered by Gemini</h4>
               <p dangerouslySetInnerHTML={{ __html: aiInsight }} />
             </div>
           )}

@@ -46,7 +46,7 @@ function Quests() {
       // Create local URL for preview
       setUploadedImage(URL.createObjectURL(file));
       
-      // Read as Base64 for Mistral API
+      // Read as Base64 for Gemini API
       const reader = new FileReader();
       reader.onloadend = () => {
         setBase64Image(reader.result);
@@ -55,7 +55,7 @@ function Quests() {
     }
   };
 
-  const verifyWithMistral = async () => {
+  const verifyWithGemini = async () => {
     if (!base64Image) return;
     setScanning(true);
     setVerificationFailed(null);
@@ -97,7 +97,7 @@ function Quests() {
         setVerificationFailed(aiResponse.replace("NO", "").trim() || "Image does not match the required task.");
       }
     } catch (error) {
-      console.error("Mistral API Error:", error);
+      console.error("Gemini API Error:", error);
       setVerificationFailed("AI Verification failed due to a network error. Please try again.");
     } finally {
       setScanning(false);
@@ -171,8 +171,8 @@ function Quests() {
 
           <div className="camera-controls">
             {!verified ? (
-              <button className="btn-primary" onClick={verifyWithMistral} disabled={scanning || !base64Image}>
-                {scanning ? 'AI Verifying...' : 'Verify Image'}
+              <button className="btn-primary" onClick={verifyWithGemini} disabled={scanning || !base64Image}>
+                {scanning ? 'Analyzing with Gemini...' : 'Verify with Gemini ✨'}
               </button>
             ) : (
               <button className="btn-secondary" onClick={closeCamera}>Return to Quests</button>

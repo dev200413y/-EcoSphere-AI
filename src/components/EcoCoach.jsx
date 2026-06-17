@@ -56,14 +56,9 @@ function EcoCoach() {
           aria-modal="false"
         >
           <header className="coach-header">
-            <div className="coach-title">
-              <span className="coach-avatar" role="img" aria-label="AI Avatar">🤖</span>
-              <div>
-                <h4>Contextual EcoCoach</h4>
-                <span className="online-status" aria-live="polite">
-                  {isTyping ? "Typing..." : "Online"}
-                </span>
-              </div>
+            <div className="coach-header-title">
+              <h3>EcoCoach</h3>
+              <span className="powered-by">Powered by Gemini ✨</span>
             </div>
             <button 
               className="close-btn" 
