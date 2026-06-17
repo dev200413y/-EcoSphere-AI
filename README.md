@@ -1,5 +1,7 @@
 # 🌍 EcoSphere AI - Carbon Footprint Tracker
 
+**Developed by dev200413y**
+
 ![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)
 ![Accessibility](https://img.shields.io/badge/accessibility-WCAG%202.1%20AA-brightgreen)
 ![Security](https://img.shields.io/badge/security-DOMPurify%20XSS%20Protection-brightgreen)
@@ -13,7 +15,7 @@
 ## 🚀 Live Demo
 
 The platform is deployed and live at:
-👉 **[https://ecosphere-ai-395044923417.us-central1.run.app](https://ecosphere-ai-395044923417.us-central1.run.app)**
+👉 **[https://ecosphere-ai-395044923417.us-central1.run.app/dashboard](https://ecosphere-ai-395044923417.us-central1.run.app/dashboard)**
 
 ---
 
@@ -102,8 +104,8 @@ Key features:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/dev200413y/-EcoSphere-AI.git
-cd -EcoSphere-AI
+git clone https://github.com/dev200413y/carbon-_print.git
+cd carbon-_print
 
 # 2. Install Dependencies
 npm install
